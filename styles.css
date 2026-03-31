@@ -125,29 +125,44 @@ code {
 @media (max-width: 800px) {
     .page {
         max-width: 100%;
+        padding-top: 20px; 
     }
 
     .header_container {
-        align-items: center;
+        display: flex;
+        flex-direction: column; 
+        align-items:left;    
+        text-align: center;
+        gap: 10px;             
+    }
+
+    .header_logo {
+        height: auto;
+        padding: 15px 0;
         text-align: center;
     }
 
     .header_menu {
+        display: flex;
         flex-direction: column; 
-        align-items: center;
+        align-items: left;
         width: 100%;
-        padding-bottom: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .header_menu-link {
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .header_menu-item {
-        margin-left: 0; 
-        margin-bottom: 10px; 
+        margin-left: 0;        
+        margin-bottom: 16px;   
+        width: 100%;           
     }
 
-    .header_logo {
-        border-bottom: none; 
-        
-        padding: 10px 0;
+    .header_menu-item:last-child {
+        margin-bottom: 0;       
     }
 
     .content {
@@ -159,6 +174,7 @@ code {
     h1 {
         font-size: 32px;
         line-height: 36px;
+        margin-bottom: 24px;
     }
 
     h2 {
@@ -173,5 +189,6 @@ code {
 
     .image img {
         width: 100%;
+        height: auto;
     }
 }
