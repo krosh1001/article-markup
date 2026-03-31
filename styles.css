@@ -1,12 +1,63 @@
-/* Основные стили */
-
 .page {
     max-width: 1424px;
     margin: 0 auto;
 }
 
 .header {
-    /* Стили для шапки будут добавлены позже */
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.header_container {
+    max-width: 1424px; 
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_menu {
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.header_menu-item {
+    margin-left: 32px;
+}
+
+.header_menu-link {
+    font-family:LucidaGrande;
+    font-size:24px;
+    color:#333333;
+    text-align:left;
+    line-height:36px;
+}
+
+.header_menu-link:hover {
+    color: rgba(0, 0, 0, 0.84);
+}
+
+.header_menu-link--active {
+    color: rgba(0, 0, 0, 0.84);
+    font-weight: bold;
+}
+
+.header_logo-img{
+    width: 97;
+    height: 64;
+
+}
+
+.page {
+    padding-top: 40px;
 }
 
 .content {
@@ -67,10 +118,6 @@ code {
 
 
 @media (max-width: 800px) {
-/* Стили для мобилки.
-   Стили применятся только когда страничка будет ≤800px шириной
- */
-
     .page {
         max-width: 100%;
     }
