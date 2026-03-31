@@ -1,4 +1,61 @@
-/* Тут пиши основные стили */
+/* Базовые настройки */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center; /* Центрируем статью как в большинстве веб-дизайнов */
+}
+
+.article {
+    width: 700px; /* Ширина контента из макета */
+    padding: 100px 50px; /* Верхний отступ компенсирует y: -99 в макете */
+}
+
+/* Шрифты для заголовков (п. 2 ТЗ) */
+.article__title, 
+.article__subtitle {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 25px;
+}
+
+.article__title {
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.article__subtitle {
+    font-size: 34px;
+    line-height: 39px;
+    margin-top: 56px; /* Отступы между секциями согласно координатам y */
+}
+
+/* Шрифт для основного текста (п. 2 ТЗ) */
+.article__paragraph {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 21px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 28px;
+}
+
+/* Стили для изображений */
+.article__image-container {
+    margin: 40px 0;
+}
+
+.article__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Шрифт для кода (если потребуется в будущем) */
+code, pre {
+    font-family: "Courier New", monospace;
+}
 
 
 @media (max-width: 800px) {
